@@ -57,3 +57,31 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
  	•	Sets up a stage to read files from GCS.
 	
  	•	Defines SQL queries for data ingestion and analysis.
+
+## Setup and Configuration
+
+### Prerequisites:
+
+1.	Google Cloud Platform:
+	
+ 	•	GCS bucket: snowflake-projects_test
+
+	•	Service account with appropriate permissions to upload files to GCS.
+
+3.	Snowflake:
+	
+ 	•	Snowflake account with access to create databases, stages, and tables.
+	
+ 	•	Configured storage integration with GCS.
+
+5.	Airflow:
+	
+ 	•	Airflow environment with the following operators:
+	
+ 	•	PythonOperator
+	
+ 	•	SnowflakeOperator
+
+7.	News API:
+	
+ 	•	Obtain an API key from https://newsapi.org/
