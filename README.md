@@ -68,13 +68,13 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 
 	•	Service account with appropriate permissions to upload files to GCS.
 
-3.	Snowflake:
+2.	Snowflake:
 	
  	•	Snowflake account with access to create databases, stages, and tables.
 	
  	•	Configured storage integration with GCS.
 
-5.	Airflow:
+3.	Airflow:
 	
  	•	Airflow environment with the following operators:
 	
@@ -82,6 +82,22 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 	
  	•	SnowflakeOperator
 
-7.	News API:
+4.	News API:
 	
  	•	Obtain an API key from https://newsapi.org/
+
+Steps to Run:
+
+1.	Setup GCS:
+	
+ •	Create a GCS bucket named snowflake-projects_test.
+	
+ •	Ensure the service account has write access to the bucket.
+ 
+2.	Configure Snowflake:
+	
+ •	Run the commands in snowflake_commands.sql to set up the database, file format, and stage.
+	
+ 3.	Install Dependencies:
+	
+ •	Python: Install required libraries:
