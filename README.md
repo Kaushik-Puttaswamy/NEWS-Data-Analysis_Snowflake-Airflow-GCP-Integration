@@ -107,3 +107,29 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 	•	Airflow: Configure the Snowflake connection (snowflake_conn) in Airflow.
 
 ![Airflow-Snowflake Connection](https://raw.githubusercontent.com/Kaushik-Puttaswamy/NEWS-Data-Analysis_Snowflake-Airflow-GCP-Integration/main/airflow_snowflake_connection.png)
+
+4.	Run the Airflow DAG:
+	
+ 	•	Trigger the DAG newsapi_to_gcs in the Airflow UI.
+
+5.	Verify Data in Snowflake:
+	
+ 	•	Check the news_api_data, summary_news, and author_activity tables in Snowflake.
+
+## Key Features
+	
+ 	•	Automated Data Fetching: Collects the latest news articles daily.
+	
+ 	•	Parquet Data Storage: Optimized storage format for large-scale data processing.
+	
+ 	•	GCS-Snowflake Integration: Seamlessly transfers data from GCS to Snowflake using external stages.
+	
+ 	•	Aggregated Insights: Generates summary tables for news sources and author activity.
+
+  ## Example Queries
+
+  ### 1.	Get Top News Sources:
+
+  ``` SELECT news_source, article_count
+FROM news_api.PUBLIC.summary_news
+ORDER BY article_count DESC; ```
