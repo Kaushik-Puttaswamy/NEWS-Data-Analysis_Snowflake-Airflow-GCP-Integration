@@ -146,3 +146,13 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 ├── snowflake_commands.sql         # SQL commands for setting up Snowflake resources
 
 ├── airflow_snowflake_connection.png # Example Snowflake-Airflow connection setup
+
+## Future Enhancements
+
+•	Support for multiple news categories and keywords.
+	
+•	Advanced data transformation and sentiment analysis.
+
+•	Real-time streaming of news data.
+
+•	Integration with BI tools for visualization.
