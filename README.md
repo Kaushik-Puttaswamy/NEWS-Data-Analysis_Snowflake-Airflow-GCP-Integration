@@ -102,6 +102,6 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 	
  	•	Python: Install required libraries:
 
-		```pip install pandas google-cloud-storage requests apache-airflow snowflake-connector-python```
+	``` pip install pandas google-cloud-storage requests apache-airflow snowflake-connector-python ```
 
 	•	Airflow: Configure the Snowflake connection (snowflake_conn) in Airflow.
