@@ -86,18 +86,18 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 	
  	•	Obtain an API key from https://newsapi.org/
 
-Steps to Run:
+## Steps to Run:
 
 1.	Setup GCS:
 	
- •	Create a GCS bucket named snowflake-projects_test.
+ 	•	Create a GCS bucket named snowflake-projects_test.
 	
- •	Ensure the service account has write access to the bucket.
+ 	•	Ensure the service account has write access to the bucket.
  
 2.	Configure Snowflake:
 	
- •	Run the commands in snowflake_commands.sql to set up the database, file format, and stage.
+ 	•	Run the commands in snowflake_commands.sql to set up the database, file format, and stage.
 	
- 3.	Install Dependencies:
+3.	Install Dependencies:
 	
- •	Python: Install required libraries:
+ 	•	Python: Install required libraries:
