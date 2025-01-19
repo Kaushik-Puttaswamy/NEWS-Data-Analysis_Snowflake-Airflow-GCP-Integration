@@ -132,3 +132,17 @@ This project demonstrates an end-to-end data pipeline that fetches news data fro
 
 
 ```SELECT news_source, article_count FROM news_api.PUBLIC.summary_news ORDER BY article_count DESC;```
+
+### 2.	Track Author Activity:
+
+``` SELECT author, article_count, distinct_sources FROM news_api.PUBLIC.author_activity WHERE article_count > 10 ORDER BY article_count DESC; ```
+
+## File Structure
+.
+├── fetch_news.py                  # Fetches news data and uploads to GCS
+
+├── news_api_airflow_job.py        # Airflow DAG for orchestrating the pipeline
+
+├── snowflake_commands.sql         # SQL commands for setting up Snowflake resources
+
+├── airflow_snowflake_connection.png # Example Snowflake-Airflow connection setup
