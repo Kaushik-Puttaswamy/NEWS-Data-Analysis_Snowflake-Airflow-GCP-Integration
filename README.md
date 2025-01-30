@@ -1,4 +1,4 @@
-# NEWS-Data-Analysis-Project-Snowflake-Airflow-GCP-Integration
+# NEWS Data Analysis Project Snowflake Airflow GCP Integration
 
 This project demonstrates an end-to-end data pipeline that fetches news data from the News API, processes it, and stores it in Google Cloud Storage (GCS) as Parquet files. The data is then ingested into Snowflake for analysis and the generation of summary tables.
 
